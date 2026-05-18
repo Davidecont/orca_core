@@ -112,23 +112,41 @@ joint_roms:
   - -50
   - 30
 neutral_position:
-  thumb_mcp: -13
-  thumb_abd: 43
-  thumb_pip: 33
-  thumb_dip: 19
-  index_abd: 25
-  index_mcp: 0
-  index_pip: 0
-  middle_abd: -2
-  middle_mcp: 0
-  middle_pip: 0
-  ring_abd: -20
-  ring_mcp: -1
-  ring_pip: 0
-  pinky_abd: -55
-  pinky_mcp: 1
-  pinky_pip: 0
-  wrist: 0
+  # thumb_mcp: -13
+  # thumb_abd: 43
+  # thumb_pip: 33
+  # thumb_dip: 19
+  # index_abd: 25
+  # index_mcp: 0
+  # index_pip: 0
+  # middle_abd: -2
+  # middle_mcp: 0
+  # middle_pip: 0
+  # ring_abd: -20
+  # ring_mcp: -1
+  # ring_pip: 0
+  # pinky_abd: -55
+  # pinky_mcp: 1
+  # pinky_pip: 0
+  # wrist: 0
+  thumb_mcp: -8.399999618530273
+  thumb_abd: 13.100000381469727
+  thumb_pip: 32.79999923706055
+  thumb_dip: -5.300000190734863
+  index_abd: 7.199999809265137
+  index_mcp: 0.6000000238418579
+  index_pip: 1.0
+  middle_abd: 7.900000095367432
+  middle_mcp: 1.100000023841858
+  middle_pip: 0.800000011920929
+  ring_abd: 42.20000076293945
+  ring_mcp: 0.10000000149011612
+  ring_pip: 0.5
+  pinky_abd: 3.299999952316284
+  pinky_mcp: 2.299999952316284
+  pinky_pip: 0.699999988079071
+  wrist: -0.5
+
 calibration_current: 400
 calibration_step_size: 0.1
 calibration_step_period: 0.001
