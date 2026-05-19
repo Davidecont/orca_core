@@ -1,4 +1,6 @@
-port: /dev/cu.usbmodem1101
+baudrate: 3000000
+motor_type: dynamixel
+port: COM5
 version: 0.2.1
 max_current: 300
 type: right

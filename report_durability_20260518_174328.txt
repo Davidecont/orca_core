@@ -1,0 +1,71 @@
+============================================================
+  ORCA HAND — DURABILITY TEST REPORT
+  Data: 2026-05-18 17:43:28
+============================================================
+
+Durata effettiva:  109.3s (1.8 min)
+Cicli completati:  15
+Frequenza cicli:   8.2 cicli/min
+
+TEMPERATURE MOTORI (°C)
+Joint            Motor    Min    Max   Media   %Max
+--------------------------------------------------
+index_pip            1   25.0   26.0    25.5  37.1%
+index_mcp            2   26.0   27.0    26.6  38.6%
+index_abd            3   26.0   27.0    26.1  38.6%
+middle_abd           4   26.0   28.0    26.9  40.0%
+pinky_abd            5   27.0   29.0    28.2  41.4%
+pinky_pip            6   28.0   30.0    29.2  42.9%
+pinky_mcp            7   29.0   31.0    29.8  44.3%
+middle_pip           8   28.0   30.0    28.8  42.9%
+middle_mcp           9   28.0   31.0    29.4  44.3%
+ring_mcp            10   28.0   30.0    29.1  42.9%
+ring_pip            11   29.0   32.0    30.4  45.7%
+ring_abd            12   28.0   30.0    29.0  42.9%
+thumb_dip           13   27.0   29.0    28.6  41.4%
+thumb_abd           14   27.0   29.0    28.1  41.4%
+thumb_pip           15   26.0   29.0    27.6  41.4%
+thumb_mcp           16   26.0   28.0    26.9  40.0%
+wrist               17   33.0   37.0    35.8  52.9%
+
+LIMITI CALIBRAZIONE
+Joint            Motor      Min      Max    Range
+--------------------------------------------------
+index_pip            1    2.625    4.616    1.991
+index_mcp            2    0.988    2.743    1.755
+index_abd            3    2.148    3.224    1.077
+middle_abd           4    4.241    5.216    0.974
+pinky_abd            5    3.108    3.821    0.713
+pinky_pip            6    0.316    2.362    2.046
+pinky_mcp            7    1.066    3.046    1.980
+middle_pip           8    0.155    2.233    2.079
+middle_mcp           9    2.020    3.944    1.924
+ring_mcp            10    1.727    3.582    1.855
+ring_pip            11    2.556    4.620    2.065
+ring_abd            12    4.263    4.611    0.348
+thumb_dip           13    0.400    1.911    1.511
+thumb_abd           14    2.522    3.300    0.778
+thumb_pip           15    3.200    5.265    2.065
+thumb_mcp           16    1.971    3.758    1.787
+wrist               17    3.375    6.072    2.697
+
+POSIZIONI FINALI MOTORI
+Joint            Motor  Pos (rad)
+-----------------------------------
+index_pip            1     2.9422
+index_mcp            2     1.3560
+index_abd            3     2.5541
+middle_abd           4     4.7446
+pinky_abd            5     3.5143
+pinky_pip            6     0.6673
+pinky_mcp            7     1.4711
+middle_pip           8     0.5031
+middle_mcp           9     2.4037
+ring_mcp            10     2.1752
+ring_pip            11     2.9176
+ring_abd            12     4.4439
+thumb_dip           13     0.5108
+thumb_abd           14     2.9253
+thumb_pip           15     3.9807
+thumb_mcp           16     2.4835
+wrist               17     4.7845

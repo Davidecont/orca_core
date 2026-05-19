@@ -4,9 +4,9 @@ from common import connect_hand, create_hand, shutdown_hand
 from orca_core import OrcaJointPositions
 
 # ── Parametri ─────────────────────────────────────────────
-NUM_STEPS_MOVE = 50
-STEP_SIZE_MOVE = 0.01
-HOLD_TIME      = 3.0
+NUM_STEPS_MOVE = 15    # era 50
+STEP_SIZE_MOVE = 0.005 # era 0.01
+HOLD_TIME      = 0.5   # era 3.0
 DURATION       = 20 * 60 #10x60
 MAX_TEMP       = 70
 TEMP_CHECK_INTERVAL = 5.0
@@ -162,28 +162,28 @@ open_pos = pose_from_fractions(hand, {
 # ── closed_pos ──
 closed_pos = pose_from_fractions(hand, {
     # thumb
-    "thumb_abd": 0.6380000114440918,
-    "thumb_mcp": 0.9539999961853027,
-    "thumb_pip": 0.7919999957084656,
-    "thumb_dip": 0.07599999755620956,
+    "thumb_abd": 0.15000000596046448,
+    "thumb_mcp": 1.0,
+    "thumb_pip": 0.7929999828338623,
+    "thumb_dip": 0.03200000151991844,
     # index
-    "index_abd": 0.4620000123977661,
-    "index_mcp": 0.6159999966621399,
-    "index_pip": 0.824999988079071,
+    "index_abd": 0.6309999823570251,
+    "index_mcp": 0.8399999737739563,
+    "index_pip": 0.718999981880188,
     # middle
-    "middle_abd": 0.5360000133514404,
-    "middle_mcp": 0.8360000252723694,
-    "middle_pip": 0.8930000066757202,
+    "middle_abd": 0.578000009059906,
+    "middle_mcp": 0.9279999732971191,
+    "middle_pip": 0.8709999918937683,
     # ring
-    "ring_abd": 0.5460000038146973,
-    "ring_mcp": 0.8209999799728394,
-    "ring_pip": 0.9509999752044678,
+    "ring_abd": 1.0,
+    "ring_mcp": 0.8040000200271606,
+    "ring_pip": 0.8799999952316284,
     # pinky
-    "pinky_abd": 0.6209999918937683,
-    "pinky_mcp": 0.6859999895095825,
-    "pinky_pip": 0.8240000009536743,
+    "pinky_abd": 0.7400000095367432,
+    "pinky_mcp": 0.8029999732971191,
+    "pinky_pip": 0.7799999713897705,
     # wrist
-    "wrist": 0.5230000019073486,
+    "wrist": 0.7089999914169312,
 })
 
 poses = [

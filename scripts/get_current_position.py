@@ -3,26 +3,10 @@ import yaml
 import dataclasses
 from common import connect_hand, create_hand, shutdown_hand
 
-def fix_motor9_wrap(hand):
-    limits = hand.calibration.motor_limits_dict.get(9, [None, None])
-    if limits[0] is None:
-        return
-    TWO_PI = 2 * math.pi
-    if limits[0] > 3.0:
-        new_limits = dict(hand.calibration.motor_limits_dict)
-        new_limits[9] = [limits[0] - TWO_PI, limits[1] - TWO_PI]
-        hand.calibration = dataclasses.replace(hand.calibration, motor_limits_dict=new_limits)
-        path = hand.config.calibration_path
-        with open(path, 'r') as f:
-            cal = yaml.safe_load(f)
-        cal['motor_limits'][9] = new_limits[9]
-        with open(path, 'w') as f:
-            yaml.dump(cal, f, default_flow_style=False)
-        print(f"✅ Motor 9 corretto: [{new_limits[9][0]:.3f}, {new_limits[9][1]:.3f}]")
 
 hand = create_hand("orca_core/models/v1/orcahand_right/config.yaml", use_mock=False)
 connect_hand(hand)
-fix_motor9_wrap(hand)
+
 
 def leggi_frazioni(hand):
     joint_pos = hand._get_joint_positions().as_dict()
