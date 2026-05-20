@@ -51,6 +51,7 @@ def print_pose_code(name, fractions):
         "middle": ["middle_abd", "middle_mcp", "middle_pip"],
         "ring":   ["ring_abd",   "ring_mcp",   "ring_pip"],
         "pinky":  ["pinky_abd",  "pinky_mcp",  "pinky_pip"],
+        "wrist": ["wrist"]
     }
     for finger, joints in groups.items():
         print(f"    # {finger}")
@@ -129,7 +130,7 @@ try:
             print("  ⏭️  Skipped.")
             continue
 
-        print_pose_live(name, fractions)
+        # print_pose_live(name, fractions)
         print_pose_code(name, fractions)
 
         confirm = input(f"\n  Save '{name}'? (ENTER = yes / 'n' = no): ").strip().lower()
